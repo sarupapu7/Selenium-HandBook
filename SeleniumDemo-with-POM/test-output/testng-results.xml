@@ -1,25 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-10T01:10:13 IST" name="Default suite" finished-at="2025-11-10T01:10:25 IST" duration-ms="11112">
+  <suite started-at="2025-11-12T23:57:44 IST" name="Default suite" finished-at="2025-11-12T23:58:16 IST" duration-ms="31618">
     <groups>
     </groups>
-    <test started-at="2025-11-10T01:10:13 IST" name="Default test" finished-at="2025-11-10T01:10:25 IST" duration-ms="11112">
-      <class name="com.demo.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demo.tests.LoginTest@6f03482]" started-at="2025-11-10T01:10:13 IST" name="setUp" finished-at="2025-11-10T01:10:19 IST" duration-ms="5998" status="PASS">
+    <test started-at="2025-11-12T23:57:44 IST" name="Default test" finished-at="2025-11-12T23:58:16 IST" duration-ms="31618">
+      <class name="com.demo.tests.LoginDDT">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demo.tests.LoginDDT@139982de]" started-at="2025-11-12T23:57:44 IST" name="setUp" finished-at="2025-11-12T23:57:48 IST" duration-ms="3501" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLoginTest()[pri:0, instance:com.demo.tests.LoginTest@6f03482]" started-at="2025-11-10T01:10:19 IST" name="validLoginTest" finished-at="2025-11-10T01:10:24 IST" duration-ms="4897" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demo.tests.LoginDDT@139982de]" started-at="2025-11-12T23:57:48 IST" name="testLogin" data-provider="loginData" finished-at="2025-11-12T23:57:49 IST" duration-ms="1054" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[student]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Logged In Successfully]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.LoginTest@6f03482]" started-at="2025-11-10T01:10:24 IST" name="tearDown" finished-at="2025-11-10T01:10:25 IST" duration-ms="165" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.LoginDDT@139982de]" started-at="2025-11-12T23:57:49 IST" name="tearDown" finished-at="2025-11-12T23:57:49 IST" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.demo.tests.LoginTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demo.tests.LoginDDT@139982de]" started-at="2025-11-12T23:57:49 IST" name="setUp" finished-at="2025-11-12T23:57:52 IST" duration-ms="2820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demo.tests.LoginDDT@139982de]" started-at="2025-11-12T23:57:52 IST" name="testLogin" data-provider="loginData" finished-at="2025-11-12T23:58:02 IST" duration-ms="10389" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrongUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your username is invalid!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.LoginDDT@139982de]" started-at="2025-11-12T23:58:02 IST" name="tearDown" finished-at="2025-11-12T23:58:02 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demo.tests.LoginDDT@139982de]" started-at="2025-11-12T23:58:02 IST" name="setUp" finished-at="2025-11-12T23:58:05 IST" duration-ms="2902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demo.tests.LoginDDT@139982de]" started-at="2025-11-12T23:58:05 IST" name="testLogin" data-provider="loginData" finished-at="2025-11-12T23:58:16 IST" duration-ms="10334" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[student]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongPass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your password is invalid!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.LoginDDT@139982de]" started-at="2025-11-12T23:58:16 IST" name="tearDown" finished-at="2025-11-12T23:58:16 IST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demo.tests.LoginDDT -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

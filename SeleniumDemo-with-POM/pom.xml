@@ -1,68 +1,46 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
-         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
+
     <groupId>com.demo</groupId>
     <artifactId>SeleniumDemo-with-POM</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <name>SeleniumDemo-with-POM</name>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
+    <name>SeleniumDemo-with-POM</name>
+    <description>Selenium project using POM design</description>
+
+    <!-- Maven & Java settings -->
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
     <dependencies>
-
-        <!-- ✅ Selenium Java -->
+        <!-- Selenium Java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.25.0</version>
         </dependency>
 
-        <!-- ✅ WebDriverManager (auto-handles ChromeDriver) -->
+        <!-- WebDriverManager (handles browser drivers automatically) -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.8.0</version>
+            <version>5.9.2</version>
         </dependency>
 
-        <!-- ✅ TestNG (for @Test, @BeforeMethod, etc.) -->
+        <!-- TestNG for testing framework -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.10.2</version>
             <scope>test</scope>
         </dependency>
-<!-- Put inside <dependencies> -->
-<dependency>
-  <groupId>org.slf4j</groupId>
-  <artifactId>slf4j-simple</artifactId>
-  <version>2.0.9</version>
-  <scope>test</scope>
-</dependency>
-
-
-
     </dependencies>
-
-    <build>
-        <plugins>
-            <!-- Ensures test execution works with TestNG -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.2.5</version>
-                <configuration>
-                    <includes>
-                        <include>**/*Test.java</include>
-                    </includes>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
